@@ -21,8 +21,7 @@ const readMailModel= new mongoose.Schema(
         },
         contractId:{
             type: String,
-            required: true,
-            match: /^[a-z0-9]{24}$/
+            required: true,           
         },
         subject:{
             type:String,

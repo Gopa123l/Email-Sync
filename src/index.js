@@ -22,6 +22,9 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 
+app.use('/api/read-mail', require('./app/routes/readMailRoute.js'));
+app.use('/api/read-mail', require('./app/routes/sendMailRoute.js'));
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
